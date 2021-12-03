@@ -1,0 +1,22 @@
+{
+  "name": "phaser-teach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch & live-server --port=6868",
+    "tree": "tree -L 4 -I 'node_modules' > README.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "1.2.1",
+    "phaser": "3.55.2",
+    "ts-loader": "9.2.6",
+    "typescript": "4.5.2",
+    "webpack": "5.64.2",
+    "webpack-cli": "4.9.1"
+  }
+}
