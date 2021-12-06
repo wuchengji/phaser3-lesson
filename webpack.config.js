@@ -5,12 +5,11 @@ module.exports = {
   entry: './src/index.ts',
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, './'),
     },
     compress: true,
     port: 6688,
-    host: 'localhost',
-    open: true,
+    open: false,
     hot: true
   },
   module: {
@@ -31,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'phaser',
+      template: './public/index.html',
       filename: 'index.html',
       hash: true
     })
